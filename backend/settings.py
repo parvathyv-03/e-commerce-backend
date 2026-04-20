@@ -23,13 +23,32 @@ load_dotenv()
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY = os.getenv("SECRET_KEY","django-insecure-development-key")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DEBUG","True").lower() in ("1","true","yes")
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS","127.0.0.1,localhost").split(",")
 
+DB_ENGINE = os.getenv("DB_ENGINE","django.db.backends.sqlite3")
+if DB_ENGINE == "django.db.backends.sqlite3":
+    DATABASES = {
+        'default':{
+            'ENGINE': DB_ENGINE,
+            'NAME' : BASE_DIR / os.getenv("DB_NAME","db.sqlite3"),
+        }
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE' : DB_ENGINE,
+            'NAME' : os.getenv("DB_NAME",""),
+            'USER' : os.getenv("DB_USER",""),
+            'PASSWORD' : os.getenv("DB_PASSWORD",""),
+            'HOST' : os.getenv("DB_HOST","localhost"),
+            'PORT' : os.getenv("DB_PORT",""),
+        }
+    }
 
 # Application definition
 
@@ -51,13 +70,12 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',    
 ]
 
 ROOT_URLCONF = 'backend.urls'

@@ -7,7 +7,7 @@ from rest_framework.response import Response
 from django.contrib.auth.password_validation import validate_password
 from django.core.exceptions import ValidationError
 
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import AllowAny,IsAuthenticated
 from rest_framework.decorators import permission_classes
 
 from .models import Wishlist,Cart
@@ -19,10 +19,14 @@ from django.shortcuts import get_object_or_404
 
 # This function accepts POST requests
 @api_view(['POST'])
+@permission_classes([AllowAny])
 def signup(request):
     # Read data from request,getting username,password from frontend
     username = request.data.get('username')
     password = request.data.get('password')
+
+    if not username or not password:
+        return Response({"error": "username and password are required"},status=400)
 
     # Username already exists or not
     if User.objects.filter(username=username).exists():
@@ -55,7 +59,7 @@ def wishlist_view(request):
                 "id":item.product.id,
                 "name":item.product.name,
                 "price":item.product.price,
-                "image":item.product.image.url,
+                "image":item.product.image.url if item.product.image else "",
             })
         return Response(data)
     
@@ -63,8 +67,10 @@ def wishlist_view(request):
 
     if request.method == 'POST':
         product_id = request.data.get("product_id")
+        if not product_id:
+            return Response({"error" : "product_id is required"},status=400)
 
-        product = Product.objects.get(id=product_id)
+        product = get_object_or_404(Product,id=product_id)
 
         item = Wishlist.objects.filter(user=user,product=product).first()
 
@@ -118,6 +124,8 @@ def cart_view(request):
 
     if request.method == 'DELETE':
             product_id = request.data.get("product_id")
+            if not product_id:
+                return Response({"error" : "product_id is required"},status=400)
 
             product = get_object_or_404(Product,id=product_id)
 

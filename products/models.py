@@ -5,7 +5,7 @@ from django.utils.text import slugify
 
 class Product(models.Model):
     name = models.CharField(max_length=200)
-    slug = models.SlugField(unique=True,blank=True)
+    slug = models.SlugField(blank=True,null=True,unique=True)
     description = models.TextField()
     price = models.FloatField()
     category = models.CharField(max_length=100)
