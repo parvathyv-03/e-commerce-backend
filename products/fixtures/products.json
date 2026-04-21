@@ -1,0 +1,434 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "name": "tshirt",
+        "slug": "tshirt-men",
+        "description": "stylish and comfortable tshirt",
+        "price": 899.0,
+        "category": "men",
+        "image": "products/tshirt-attire.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "name": "Men casual Shirt",
+        "slug": "men-casual-shirt",
+        "description": "Comfortable cotton casual shirt",
+        "price": 899.0,
+        "category": "men",
+        "image": "products/shirt-1.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "name": "Casual Shirt",
+        "slug": "casual-shirt",
+        "description": "Stylish and comfortable shirt",
+        "price": 1299.0,
+        "category": "men",
+        "image": "products/shirt-2_imEcwgV.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "name": "Men Casual Shirt",
+        "slug": "casual-shirt-men",
+        "description": "Comfortable cotton casual shirt",
+        "price": 799.0,
+        "category": "men",
+        "image": "products/shirt-3.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "name": "Crop Top",
+        "slug": "crop-top",
+        "description": "Lightweight cotton wear",
+        "price": 499.0,
+        "category": "women",
+        "image": "products/women-1.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "name": "Full Sleeve Top",
+        "slug": "full-sleeve-top",
+        "description": "Stylish and comfortable",
+        "price": 699.0,
+        "category": "women",
+        "image": "products/women-2.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "name": "Casual Top",
+        "slug": "casual-top",
+        "description": "Casual pink top",
+        "price": 799.0,
+        "category": "women",
+        "image": "products/women-3.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "name": "Denim Top",
+        "slug": "denim-top",
+        "description": "Stylish denim top",
+        "price": 899.0,
+        "category": "women",
+        "image": "products/women-4.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "name": "Denim sneakers",
+        "slug": "denim-sneakers",
+        "description": "Stylish sneakers",
+        "price": 1599.0,
+        "category": "footwear",
+        "image": "products/footwear-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "name": "Puma Sneakers",
+        "slug": "puma-sneakers",
+        "description": "Comfortable Sneakers",
+        "price": 1599.0,
+        "category": "footwear",
+        "image": "products/footwear-2.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "name": "Adidas Sneakers",
+        "slug": "adidas-sneakers",
+        "description": "Stylish sneakers",
+        "price": 1599.0,
+        "category": "footwear",
+        "image": "products/footwear-3.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "name": "White Sneakers",
+        "slug": "white-sneakers",
+        "description": "Comfortable sneakers",
+        "price": 1599.0,
+        "category": "footwear",
+        "image": "products/footwear-4.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "name": "Groww",
+        "slug": "groww",
+        "description": "Anti tarnish waterproof necklace",
+        "price": 160.0,
+        "category": "jewellery",
+        "image": "products/jewellery-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "name": "Common",
+        "slug": "common",
+        "description": "Elegent gold plated alloy pendant",
+        "price": 184.0,
+        "category": "jewellery",
+        "image": "products/jewellery-2.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+        "name": "Minimal",
+        "slug": "minimal",
+        "description": "Elegant pendant necklace",
+        "price": 219.0,
+        "category": "jewellery",
+        "image": "products/jewellery-3.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+        "name": "Creations",
+        "slug": "creations",
+        "description": "Elegant gold pendant necklace",
+        "price": 151.0,
+        "category": "jewellery",
+        "image": "products/jewellery-4.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+        "name": "BAGGAGE",
+        "slug": "baggage",
+        "description": "Office bag for women",
+        "price": 1025.0,
+        "category": "handbags",
+        "image": "products/handbag-1_PBOCROt.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+        "name": "BAGGIT",
+        "slug": "baggit",
+        "description": "Women Solid Color Bag",
+        "price": 1200.0,
+        "category": "handbags",
+        "image": "products/handbag-2.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+        "name": "TOTE",
+        "slug": "tote",
+        "description": "Structured Tote Bag",
+        "price": 999.0,
+        "category": "handbags",
+        "image": "products/handbag-3.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+        "name": "DESIGNER",
+        "slug": "designer",
+        "description": "Office Bag for women",
+        "price": 1099.0,
+        "category": "handbags",
+        "image": "products/handbag-4.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+        "name": "ABCD",
+        "slug": "abcd",
+        "description": "Stylish Sunglasses for men and women",
+        "price": 570.0,
+        "category": "eyewear",
+        "image": "products/eyewear-1.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+        "name": "WEARIT",
+        "slug": "wearit",
+        "description": "UV protected sunglasses",
+        "price": 799.0,
+        "category": "eyewear",
+        "image": "products/eyewear-2.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+        "name": "GLASSES",
+        "slug": "glasses",
+        "description": "Oval Sunglasses",
+        "price": 493.0,
+        "category": "eyewear",
+        "image": "products/eyewear-3.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 26,
+    "fields": {
+        "name": "EVERYONE",
+        "slug": "everyone",
+        "description": "Square Sunglasses",
+        "price": 499.0,
+        "category": "eyewear",
+        "image": "products/eyewear-4.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 27,
+    "fields": {
+        "name": "CONNECTION",
+        "slug": "connection",
+        "description": "Men Stainless Steel Watch",
+        "price": 2299.0,
+        "category": "watchesmen",
+        "image": "products/watchmen-1_zmznbCh.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 28,
+    "fields": {
+        "name": "SEIKOO",
+        "slug": "seikoo",
+        "description": "Men Analogue Watch",
+        "price": 1999.0,
+        "category": "watchesmen",
+        "image": "products/watchmen-2.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 29,
+    "fields": {
+        "name": "BROWN",
+        "slug": "brown",
+        "description": "Men Leather Analogue watch",
+        "price": 1699.0,
+        "category": "watchesmen",
+        "image": "products/watchmen-3.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 30,
+    "fields": {
+        "name": "FACE",
+        "slug": "face",
+        "description": "Men Analogue watch",
+        "price": 2499.0,
+        "category": "watchesmen",
+        "image": "products/watchmen-4_fP8hrJF.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 31,
+    "fields": {
+        "name": "TIME",
+        "slug": "timee",
+        "description": "Women Watch",
+        "price": 1299.0,
+        "category": "watcheswomen",
+        "image": "products/watchwomen-1.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 32,
+    "fields": {
+        "name": "SN",
+        "slug": "sn",
+        "description": "Analogue Watch",
+        "price": 899.0,
+        "category": "watcheswomen",
+        "image": "products/watchwomen-2.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 33,
+    "fields": {
+        "name": "TALENT",
+        "slug": "talent",
+        "description": "Analogue Watch",
+        "price": 819.0,
+        "category": "watcheswomen",
+        "image": "products/watchwomen-3.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 34,
+    "fields": {
+        "name": "HARBOUR",
+        "slug": "harbour",
+        "description": "Analogue watch for women",
+        "price": 999.0,
+        "category": "watcheswomen",
+        "image": "products/watchwomen-4.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 35,
+    "fields": {
+        "name": "ETC",
+        "slug": "etc",
+        "description": "Perfect mini lipstick",
+        "price": 499.0,
+        "category": "beautyandmakeup",
+        "image": "products/beautymakeup-1.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 36,
+    "fields": {
+        "name": "BLUE",
+        "slug": "blue",
+        "description": "Perfect Lipstick",
+        "price": 399.0,
+        "category": "beautyandmakeup",
+        "image": "products/beautymakeup-2.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 37,
+    "fields": {
+        "name": "MAY",
+        "slug": "may",
+        "description": "Matte Compact",
+        "price": 160.0,
+        "category": "beautyandmakeup",
+        "image": "products/beautymakeup-3.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 38,
+    "fields": {
+        "name": "EYYE",
+        "slug": "eyye",
+        "description": "Mascara - Deep Black",
+        "price": 399.0,
+        "category": "beautyandmakeup",
+        "image": "products/beautymakeup-4.jpg"
+    }
+}
+]

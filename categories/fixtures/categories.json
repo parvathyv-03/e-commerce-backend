@@ -1,0 +1,65 @@
+[
+{
+    "model": "categories.category",
+    "pk": 3,
+    "fields": {
+        "name": "Footwear"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": 4,
+    "fields": {
+        "name": "Jewellery"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": 5,
+    "fields": {
+        "name": "Men"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": 6,
+    "fields": {
+        "name": "Women"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": 7,
+    "fields": {
+        "name": "Watches For Men"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": 8,
+    "fields": {
+        "name": "Watches For Women"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": 9,
+    "fields": {
+        "name": "Beauty and Makeup"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": 10,
+    "fields": {
+        "name": "Handbags"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": 11,
+    "fields": {
+        "name": "Eyewear"
+    }
+}
+]
