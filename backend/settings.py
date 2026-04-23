@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     'accounts',
     'rest_framework',
     'categories',
+    'orders',
     'corsheaders',
     
 ]

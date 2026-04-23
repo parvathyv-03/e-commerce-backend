@@ -8,7 +8,9 @@ from .serializers import ProductSerializer
 
 @api_view(['GET'])
 def get_products(request):
+    print("🔥🔥 VIEW HIT 🔥🔥")  
     category = request.GET.get('category')
+    print(category)
 
     # filters products
     if category:

@@ -29,7 +29,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('products', '0003_alter_product_slug'),
-        ('categories','002_load_initial_categories'),
+        ('categories','0002_load_initial_categories'),
     ]
 
     operations = [
