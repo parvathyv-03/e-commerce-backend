@@ -76,6 +76,4 @@ This backend supports Razorpay Test Mode Integration.
 This project is built for learning and portfolio purposes to practice real-world django backend development 
 and REST API architecture.
 
-### Author
-Parvathy V <br>
-Python Fullstack Learner
+
