@@ -22,6 +22,10 @@ load_dotenv()
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
+RAZORPAY_KEY_ID = os.getenv("RAZORPAY_KEY_ID")
+RAZORPAY_SECRET = os.getenv("RAZORPAY_SECRET")
+
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv("SECRET_KEY","django-insecure-development-key")
 
@@ -161,5 +165,5 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME' : timedelta(days=1),
+    'ACCESS_TOKEN_LIFETIME' : timedelta(days=100),
 }
