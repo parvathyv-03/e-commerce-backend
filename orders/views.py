@@ -12,10 +12,15 @@ from .models import Order
 def create_order(request):
     data = request.data
 
-    serializer = OrderSerializer(data={
-        **data,
-        'user': request.user.id
-    })
+    if isinstance(data, list):
+        for item in data:
+            item['user'] = request.user.id
+        serializer = OrderSerializer(data=data, many=True)
+    else:
+        serializer = OrderSerializer(data={
+            **data,
+            'user': request.user.id
+        })
 
     if serializer.is_valid():
         serializer.save()

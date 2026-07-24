@@ -125,7 +125,8 @@ def cart_view(request):
     if request.method == 'DELETE':
             product_id = request.data.get("product_id")
             if not product_id:
-                return Response({"error" : "product_id is required"},status=400)
+                Cart.objects.filter(user=request.user).delete()
+                return Response({"message": "Cart cleared"})
 
             product = get_object_or_404(Product,id=product_id)
 
