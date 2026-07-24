@@ -1,9 +1,0 @@
-SECRET_KEY = 'django-insecure-587atbriam@qu32r9(l_odc$r*=3@#oa03+4#j52(7p0ynh^ie'
-DEBUG = True
-ALLOWED_HOSTS=127.0.0.1,LOCALHOST
-
-DB_ENGINE=django.db.backends.sqlite3
-DB_NAME=db.sqlite3
-
-RAZORPAY_KEY_ID=rzp_test_SQdBDtiGxkiAor
-RAZORPAY_SECRET=U1xiflvX62dL2rumXOe2HVJv
